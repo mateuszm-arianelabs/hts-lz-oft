@@ -5,10 +5,20 @@ import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 import { OFT } from "@layerzerolabs/oft-evm/contracts/OFT.sol";
 
 contract MyOFT is OFT {
+    uint8 decimalsArg = 8;
+
     constructor(
         string memory _name,
         string memory _symbol,
         address _lzEndpoint,
         address _delegate
     ) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {}
+
+    function mint(address account, uint256 value) external onlyOwner {
+        _mint(account, value);
+    }
+
+    function decimals() public view override returns (uint8) {
+        return decimalsArg;
+    }
 }

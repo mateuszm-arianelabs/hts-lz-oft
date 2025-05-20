@@ -15,6 +15,9 @@ importers:
       '@hashgraph/sdk':
         specifier: ^2.64.5
         version: 2.64.5(bn.js@5.2.2)(react-native@0.79.2(@babel/core@7.27.1)(bufferutil@4.0.9)(react@17.0.2)(utf-8-validate@5.0.10))
+      '@layerzerolabs/devtools-evm-hardhat':
+        specifier: ^2.0.9
+        version: 2.0.9(eb92a83c3c6c4992cd650394909b6503)
       '@layerzerolabs/lz-evm-oapp-v2':
         specifier: ^3.0.94
         version: 3.0.94(5dcccae4a0d09b5387c18227a4e8ae92)

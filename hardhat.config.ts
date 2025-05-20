@@ -11,6 +11,9 @@ import '@nomiclabs/hardhat-ethers'
 import '@layerzerolabs/toolbox-hardhat'
 import { HardhatUserConfig, HttpNetworkAccountsUserConfig } from 'hardhat/types'
 
+import './tasks/oft-send'
+import './tasks/oft-mint'
+
 import { EndpointId } from '@layerzerolabs/lz-definitions'
 
 import './type-extensions'

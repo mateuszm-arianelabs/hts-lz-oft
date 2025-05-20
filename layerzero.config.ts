@@ -18,7 +18,7 @@ import type { OAppOmniGraphHardhat, OmniPointHardhat } from '@layerzerolabs/tool
  *     },
  */
 const hederaContract: OmniPointHardhat = {
-    eid: EndpointId.SEPOLIA_V2_TESTNET,
+    eid: EndpointId.HEDERA_V2_TESTNET,
     contractName: 'ExampleHTS',
 }
 
